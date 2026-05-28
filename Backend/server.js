@@ -3,7 +3,7 @@ const cors = require('cors');
 const bankRoutes = require('./routes/bankRoutes');
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 // Enable CORS so your React frontend can talk to this backend server smoothly
 app.use(cors());
@@ -14,7 +14,5 @@ app.use(express.json());
 app.use('/api', bankRoutes);
 
 app.listen(PORT, () => {
-    console.log(`===================================================`);
-    console.log(`  Banking System Backend Layer active on Port ${PORT}`);
-    console.log(`===================================================`);
+    console.log(`Server is running on port ${PORT}`);
 });
