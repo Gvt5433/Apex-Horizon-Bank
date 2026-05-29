@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 function App() {
-  // Navigation & User Management States
-  const API_URL = 'https://apex-horizon-bank.onrender.com';
+const API_URL = 'https://apex-horizon-bank.onrender.com/api';
   const [screen, setScreen] = useState('LOGIN');
   const [userSession, setUserSession] = useState(null);
   const [profileData, setProfileData] = useState({});
