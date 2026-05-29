@@ -3,7 +3,7 @@ import axios from 'axios';
 
 function App() {
   // Navigation & User Management States
-  const API_URL = '/api';
+  const API_URL = 'https://apex-horizon-bank.onrender.com';
   const [screen, setScreen] = useState('LOGIN');
   const [userSession, setUserSession] = useState(null);
   const [profileData, setProfileData] = useState({});
